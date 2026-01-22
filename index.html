@@ -1,229 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Mahato's Portfolio
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"></h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Portfolio</a>
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h2>Hi, I'm <span class="highlight">Himanshu Mahato</span></h2>
+                <p class="subtitle">BCA Student</p>
+                <p class="description">Passionate about creating innovative solutions and learning new technologies</p>
+                <div class="cta-buttons">
+                    <a href="resume.pdf" download class="btn btn-primary"><i class="fas fa-download"></i> Download
+                        Resume</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
+            </div>
+            <div class="hero-image">
+                <img src="profile.jpg" alt="John Doe Profile Picture">
+            </div>
+        </div>
+    </section>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#certificates" class="nav__link">Certificates</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A BCA student at Amity University, Raipur, I am a passionate and motivated student with a strong interest in software engineering. I enjoy learning new technologies and building simple, user-friendly websites. I am continuously improving my skills in HTML, CSS, JavaScript, and programming concepts, and I am eager to apply my knowledge to real-world projects ..</p>
+                    <div class="education">
+                        <h3>Education</h3>
+                        <p><strong>Amity University, Chhattisgarh</strong></p>
+                        <p>Bachelor's degree in Computer Applications</p>
+                        <p>Currently in 2nd year</p>
+                        <p>CGPA (1st year): 8.02/10</p>
+                        <p>Expected Graduation: June 2027</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Text Encryption & Decryption using Caesar Cipher </h3>
+                    <p>I built a Python tool that encrypts and decrypts messages using the Caesar Cipher, with
+                        user-input text and shift values.
+
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Caesar Cipher Algorithm</span>
+                        <span class="tech-tag">GUI</span>
+
+                    </div>
+                    <a href="#" class="https://github.com/nainasethia/CST_CS_T1.git">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Image Encryption Tool</h3>
+                    <p>I created a Python application for basic image encryption using pixel-level techniques like pixel
+                        swapping and arithmetic operations, showcasing simple methods for data protection and privacy.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pixel Swapping</span>
+                        <span class="tech-tag">Arithmetic Operations</span>
+                        <span class="tech-tag">Image Processing</span>
+                        <span class="tech-tag">Encryption</span>
+                        <span class="tech-tag">Decryption</span>
+                        <span class="tech-tag">GUI</span>
+
+                    </div>
+                    <a href="#" class="https://github.com/nainasethia/CST_CS_T2.git">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Password Strength Analyzer</h3>
+                    <p>I built a Python program that evaluates password strength based on length, character variety, and
+                        special symbols, providing real-time feedback to improve cybersecurity awareness and password
+                        hygiene.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Regular Expressions</span>
+
+                    </div>
+                    <a href="#" class="https://github.com/nainasethia/CST_CS_T3.git">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Basic Keylogger</h3>
+                    <p>I designed a controlled-environment keylogger that records keystrokes and securely logs data for
+                        analysis, focusing on ethical cybersecurity practices while improving my Python and
+                        file-handling skills.
+
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Keylogger</span>
+                        <span class="tech-tag">File Handling</span>
+                        <span class="tech-tag">Encryption</span>
+                        <span class="tech-tag">Logging</span>
+
+                    </div>
+                    <a href="#" class="https://github.com/nainasethia/CST_CS_T4.git">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Network Management Project</h3>
+                    <p>I configured enterprise-style servers on Red Hat Enterprise Linux, setting up domains, secure
+                        access controls, and managing network resources to build strong Linux and infrastructure skills.
+
+
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Linux Command</span>
+                        <span class="tech-tag">DNS Server</span>
+
+                    </div>
+                    <a href="#" class="https://github.com/nainasethia/Network-Management-Project.git">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Student/Admin Management System</h3>
+                    <p>I built a secure multi-role PHP–MySQL web app with core user and admin features, added
+                        JavaScript-based client-side validation, and deployed it on WampServer with a structured
+                        student/admin database system.
+
+
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">WampServer</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">HTML/CSS</span>
+
+                    </div>
+                    <a href="#" class="https://github.com/nainasethia/Student-Admin-Management-System.git">View Project
+                        →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Feature-Rich Utility App </h3>
+                    <p>I built a feature-rich Android app using Java, Android Studio, and Firebase for authentication
+                        and data storage, adding tools like a calculator, torch, connectivity toggles, camera, media
+                        player, and sensor features, while managing the full Firebase setup, dependencies, and
+                        permissions.
+
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Android Studio</span>
+                        <span class="tech-tag">Firebase</span>
+
+                    </div>
+                    <a href="#" class="https://github.com/nainasethia/Feature-Rich-Utility-App.git">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>C++/C</li>
                     </ul>
                 </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Linux</li>
+                        <li>Kali Linux</li>
+                        <li>Networking</li>
+                        <li>WampServer</li>
+                        <li>Android Studio</li>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,I'am <br><span class="home__title-color">Himanshu Mahato</span><br> Student</h1>
-
-                    <a href="#" class="button">Contact</a>
+                <div class="skill-category">
+                    <h3>Version Control</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
                 </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/himanshu-mahto-b913763a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"  class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/himanshumahto57-sketch" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-
+                <div class="skill-category">
+                    <h3>Database</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li></li>
+                    </ul>
                 </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="b.png"/>
-                        </g>
-                    </svg>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML</li>
+                    </ul>
                 </div>
-            </section>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Team Management</li>
+                        <li>Problem Solving</li>
+                        <li>Decision Making</li>
+                        <!-- <li></li>
+                        <li>Creative and Critical Thinking</li>
+                        <li>Emotional Intelligence</li>
+                        <li>Problem Solving</li> -->
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="a.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'm Himanshu,</h2>
-                        <p class="about__text">A BCA student at Amity University, Raipur, I am a passionate and motivated student with a strong interest in software engineering. I enjoy learning new technologies and building simple, user-friendly websites. I am continuously improving my skills in HTML, CSS, JavaScript, and programming concepts, and I am eager to apply my knowledge to real-world projects .</p>           
-                     <ul><br>
-                    <!-- <li><strong>Website:</strong> www.example.com</li> -->
-                    <li><strong>Phone:</strong>+91 </li>
-                    <li><strong>Address:</strong> Raipur,Chhattisgarh</li>
-                    <li><strong>Age:</strong> 20</li>
-                    <li><strong>Degree:</strong> BCA</li>
-                    <li><strong>Email:</strong> himanshumahto57@gmail.com</li>
-                    <li><strong>BCA CGPA (1st year):</strong> 8.02/10 </li>
-                    
-                </ul>
-                   </div>                                   
+                    </ul>
                 </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">I am building my programming skills through hands-on practice and continuous learning. I enjoy working on a computer, exploring new concepts, and improving my coding abilities.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class=''></i>
-                                <span class="skills__name">C</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class=''></i>
-                                <span class="skills__name">CPP  </span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">55%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='' ></i>
-                                <span class="skills__name">NA</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">0%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class=''></i>
-                                <span class="skills__name">NA</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">0</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="work3.jpg" alt="" class="skills__img">
-                    </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>English</li>
+                        <li>Hindi</li>
+                    </ul>
                 </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="Certificates section" id="certificates">
-                <h2 class="section-title">Certificates</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="Certificate5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="Certificate6.jpg" alt="">
-                    </a>
-                     <a href="" class="work__img">
-                        <img src="Certificate7.jpeg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="Certificate8.jpeg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="Certificate9.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="Certificate10.jpeg" alt="">
-                    </a>
-                     <a href="" class="work__img">
-                        <img src="Certificate1.jpeg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="Certificate2.jpeg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="Certificate3.jpeg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="Certificate4.jpeg" alt="">
-                    </a>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enter" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Thankyou</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Portfolio</p>
-        </footer>
+        </div>
+    </section>
 
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <i class="fas fa-trophy achievement-icon"></i>
+                    <h3>NetCamp</h3>
+                    <p class="achievement-date">Issued: October 2025</p>
+                    <p>Certificate of Summer Internship</p>
+                    <a href="https://drive.google.com/file/d/1pFJbTHtTDKPGJBSy4I0uD8WYpYhbmG4-/view?usp=drive_link" target="_blank" class="">View Certificate →</a>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-certificate achievement-icon"></i>
+                    <h3>NetCamp</h3>
+                    <p class="achievement-date">Issued: October 2025</p>
+                    <p>Certificate in Network Management and Web Development with Ethical Hacking</p>
+                     <a href="https://drive.google.com/file/d/1-c8Kg38JtIMemc0Brn4dy61ZSgt4fBRX/view?usp=sharing" target="_blank" class="">View Certificate  →</a>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-medal achievement-icon"></i>
+                    <h3>NetCamp</h3>
+                    <p class="achievement-date">Issued: October 2025</p>
+                    <p>Certificate of Industrial Training</p>
+                     <a href="https://drive.google.com/file/d/1qcs0n4NTTbI68OhQti8NSIrQzd2-goHi/view?usp=sharing" target="_blank" class="">View Certificate →</a>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-certificate achievement-icon"></i>
+                    <h3>NetCamp</h3>
+                    <p class="achievement-date">Issued: October 2025</p>
+                    <p>Certification in Android Development with Core Java</p>
+                     <a href="https://drive.google.com/file/d/1HoOjJQj8qba0sRwYdSPwblDHGVhbi2m_/view?usp=sharing" target="_blank" class="">View Certificate →</a>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-award achievement-icon"></i>
+                    <h3>Infosys</h3>
+                    <p class="achievement-date">Issued: 19 August 2024</p>
+                    <p>Introduction to Programming Languages</p>
+                     <a href="https://drive.google.com/file/d/1XDC1UgFpo7gt2t4LS5QYJ9TXawAwSSM4/view?usp=sharing" target="_blank" class="">View Certificate →</a>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-award achievement-icon"></i>
+                    <h3>Infosys</h3>
+                    <p class="achievement-date">Issued: 21 November 2025</p>
+                    <p>Programming Fundamentals using Python - Part 1</p>
+                     <a href="https://drive.google.com/file/d/1Y9dAx_TcObAo4kap1gUQz1pMc3_yQuR3/view?usp=sharing" target="_blank" class="">View Certificate →</a>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-award achievement-icon"></i>
+                    <h3>Viksit Bharat Young Leaders Dialogue (VBYLD) 2026</h3>
+                    <p class="achievement-date">Issued: 09 October 2025</p>
+                    <p>CERTIFICATE OF PARTICIPATION</p>
+                     <a href="https://drive.google.com/file/d/1o0UUGL9v5zARQ6c1BMCrKta4ghoXWkkv/view?usp=sharing" target="_blank" class="">View Certificate →</a>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-award achievement-icon"></i>
+                    <h3>PyNet Labs</h3>
+                    <p class="achievement-date">Issued: 06 may 2025</p>
+                    <p>CERTIFICATE OF PARTICIPATION</p>
+                     <a href="https://drive.google.com/file/d/1JCX6_6ZgY1-aWwAkqxFiuhz_Av9BJl_r/view?usp=sharing" target="_blank" class="">View Certificate →</a>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-award achievement-icon"></i>
+                    <h3>Codicians Club</h3>
+                    <p class="achievement-date">Issued: 24 October 2024</p>
+                    <p>CERTIFICATE OF PARTICIPATION</p>
+                     <a href="https://drive.google.com/file/d/1M6j44IFATjLaKNzKpquBgtx6-g4bUs9d/view?usp=sharing" target="_blank" class="">View Certificate →</a>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-award achievement-icon"></i>
+                    <h3>GDG</h3>
+                    <p class="achievement-date">Issued: </p>
+                    <p>CERTIFICATE OF GEN AI EXCELLENCE</p>
+                     <a href="https://drive.google.com/file/d/1gXEppLnwROEMro05eWswzGYA3mk1aVVX/view?usp=sharing" target="_blank" class="">View Certificate →</a>
+                </div>
+                <!-- <div class="achievement-card">
+                    <i class="fas fa-certificate achievement-icon"></i>
+                    <h3>Meta Front-End Developer Certificate</h3>
+                    <p class="achievement-date">Issued: November 2024</p>
+                    <p>Professional certificate in modern front-end development</p>
+                     <a href="https://drive.google.com/file/d/1pFJbTHtTDKPGJBSy4I0uD8WYpYhbmG4-/view?usp=drive_link" target="_blank" class="">View Certificate →</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Research Papers</h2>
+            <div class="research-list">
+                <div class="research-paper">
+                    <div class="paper-header">
+                        <i class="fas fa-file-alt paper-icon"></i>
+                        <div class="paper-info">
+                            <h3>Machine Learning Approaches for Predictive Healthcare Analytics</h3>
+                            <p class="paper-authors">John Doe, Dr. Jane Smith</p>
+                            <p class="paper-venue">International Conference on AI in Healthcare, 2024</p>
+                        </div>
+                    </div>
+                    <p class="paper-abstract">This paper explores the application of machine learning algorithms in
+                        predicting patient outcomes and optimizing healthcare delivery systems.</p>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link"><i class="fas fa-download"></i> PDF</a>
+                        <a href="#" class="paper-link"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div>
+                <div class="research-paper">
+                    <div class="paper-header">
+                        <i class="fas fa-file-alt paper-icon"></i>
+                        <div class="paper-info">
+                            <h3>Optimizing Web Performance Through Advanced Caching Strategies</h3>
+                            <p class="paper-authors">John Doe, Prof. Michael Johnson</p>
+                            <p class="paper-venue">Journal of Web Technologies, Vol. 15, 2024</p>
+                        </div>
+                    </div>
+                    <p class="paper-abstract">An investigation into modern caching techniques and their impact on web
+                        application performance and user experience.</p>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link"><i class="fas fa-download"></i> PDF</a>
+                        <a href="#" class="paper-link"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div>
+                <div class="research-paper">
+                    <div class="paper-header">
+                        <i class="fas fa-file-alt paper-icon"></i>
+                        <div class="paper-info">
+                            <h3>Blockchain Applications in Supply Chain Management</h3>
+                            <p class="paper-authors">John Doe, Sarah Williams, Dr. Robert Brown</p>
+                            <p class="paper-venue">IEEE Blockchain Conference, 2023</p>
+                        </div>
+                    </div>
+                    <p class="paper-abstract">This research examines the potential of blockchain technology to enhance
+                        transparency and efficiency in supply chain operations.</p>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link"><i class="fas fa-download"></i> PDF</a>
+                        <a href="#" class="paper-link"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
-        <!--===== MAIN JS =====-->
-        <script src="main.js"></script>
-    </body>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">I'm always open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:himanshumahto57@gmail.com">himanshumahto57@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/himanshumahato3108/" target="_blank">LinkedIn</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github contact-icon"></i>
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/himanshumahto57-sketch" target="_blank">GitHub</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-social">
+                <a href="mailto:himanshumahto57@gmail.com" class="footer-icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/himanshumahato3108/" target="_blank" class="footer-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/himanshumahto57-sketch" target="_blank" class="footer-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy; Portfolio.</p>
+        </div>
+    </footer>
+</body>
+
 </html>
-
-
